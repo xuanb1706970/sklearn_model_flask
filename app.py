@@ -4,10 +4,10 @@ from keras.preprocessing import image
 from PIL import Image
 app = Flask(__name__)
 
-dic = {0 : 'Canh Xuan', 1 : 'Tuan Kha'}
+dic = {0 : 'Canh Xuan', 1 : 'Ronaldo', 2: 'Tuan Kha'}
 
 print('hello')
-model = load_model('model.h5')
+model = load_model('model_fl.h5')
 
 model.make_predict_function()
 
